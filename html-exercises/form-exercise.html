@@ -7,9 +7,51 @@
 </head>
 <body>
     <h1>Registracion</h1>
-    <form action="https://www.google.com"> 
-        <label for="nombre">Nombre</label>
-        <input id="nombre" type="text" required>
+    <form action=""> 
+        <label for="nombre">Nombre: </label>
+        <input name="nombre" id="nomb" type="text" required>
+        <label for="apellido">Apellido: </label>
+        <input name="apellido" id="apell" type="text" required>
+        <br>
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="sexo" id="hombre" value="hombre" required>
+        <label for="mujer">Mujer</label>
+        <input type="radio" name="sexo" id="mujer" value="mujer" required>
+        <label for="otro">Otro</label>
+        <input type="radio" name="sexo" id="otro" value="otro" required>
+        <br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required>
+        <label for="pass">Contraseña: </label>
+        <input type="password" name="pass" id="pass" pattern=".{3,5}" title="Constraseña debe ser entre 3 y 5 caracteres" required>
+        <br>
+        <label for="nacimiento">Fecha Nacimiento: </label>
+        <input type="date" name="nacimiento" id="nacimiento" required>
+        <br>
+        <label for="">
+            Nacimiento:
+            <select name="dia" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select> 
+            <select name="mes" id="">
+                <option >Enero</option>
+                <option >Febrero</option>
+                <option >Marzo</option>
+            </select>
+            <select name="año" id="">
+                <option value="">1987</option>
+                <option value="">1988</option>
+                <option value="">1989</option>
+            </select>
+        </label>
+        <br>
+        <label for="check">Estoy de acuerdo con los términos y condiciones</label>
+        <input type="checkbox" name="check" id="check" required>
+        <br>
         <button>Enviar</button>
     </form>
 </body>
